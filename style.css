@@ -1,110 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=My+Soul:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
-body{
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(252, 218, 175);
+:root {
+  --color1: #f7dece;
+  --color2: #eed7c5;
+  --color3: #ccccbb;
+  --color4: #9ec4bb;
+  --color5: #2d2e2c;
 }
 
-.conteudo{
-    width: 100%;
-    max-width: 430px;
-    margin: 1rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(250, 209, 122);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
+* {
+  box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color1), var(--color2));
+  color: var(--color5);
+  font-family: "Ballet", cursive;
+  font-weight: 700;
 }
 
-/* From Uiverse.io by Tsiangana */ 
+.conteudo {
+  width: 100%;
+  max-width: 430px;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(255,255,255,0.4), rgba(238,215,197,0.95));
+  box-shadow: 0 16px 40px rgba(45, 46, 44, 0.12);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.45);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--color4);
+  box-shadow: 0 10px 24px rgba(45, 46, 44, 0.12);
+}
+
+/* From Uiverse.io by Tsiangana */
 .card {
   width: 100%;
   max-width: 190px;
-  background: lightgrey;
-  border-radius: 10px;
+  background: var(--color3);
+  border-radius: 16px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  box-shadow: 0 12px 24px rgba(45, 46, 44, 0.1);
 }
 
 .card .one {
   width: 100%;
-  height: 254px;
+  height: 294px;
   z-index: 10;
   position: relative;
-  background: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(247, 222, 206, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 10px 28px rgba(45, 46, 44, 0.1);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.35);
   box-sizing: border-box;
   padding: 8px 0;
 }
 
 .card .one .title {
-  width: 70px;
-  border: 1px solid rgba(180, 177, 177, 0.308);
+  width: 94px;
+  border: 1px solid rgba(45, 46, 44, 0.16);
+  background: rgba(255,255,255,0.55);
   display: block;
   margin: 12px auto;
   text-align: center;
   font-size: 10px;
   border-radius: 12px;
-  font-family: Roboto, sans-serif;
-  color: rgba(102, 100, 100, 0.911);
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: var(--color5);
+  padding: 4px 0;
 }
 
 .card .one .music {
   width: 80px;
   height: 80px;
-  background: rgba(216, 212, 212, 0.726);
+  background: var(--color4);
   margin: 30px auto;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: inset 0 2px 6px rgba(45, 46, 44, 0.12);
 }
 
-.card .one .name {
+.card .one .name,
+.card .one .name1 {
   width: 150px;
   height: 20px;
   font-size: 12px;
-  font-weight: 500;
-  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
   padding: 0 5px;
   margin: -22px auto;
   display: block;
   overflow: hidden;
   text-align: center;
-  color: rgba(50, 49, 51, 0.637);
+  color: var(--color5);
 }
+
 .card .one .name1 {
   width: 120px;
-  height: 20px;
   font-size: 9px;
-  font-weight: 500;
-  font-family: Roboto, sans-serif;
-  padding: 0 5px;
   margin: 19px auto;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  color: rgba(50, 49, 51, 0.637);
 }
+
 .card .one .bar {
   width: 120px;
   margin: 12px auto;
@@ -128,41 +146,54 @@ img{
   width: 120px;
   padding: 0;
 }
-.card .one .bar .color {
-  fill: rgba(82, 79, 79, 0.829);
-}
+
+.card .one .bar .color,
 .card .one .bar .color1 {
-  fill: rgba(29, 28, 28, 0.829);
+  fill: var(--color5);
+}
+
+.card .one .bar .color1 {
   cursor: pointer;
 }
 
 .card .one .bar .bi:first-child {
   transform: rotate(180deg);
 }
+
 .card .one .bar:last-child .color1:first-child {
   transform: rotate(0deg);
 }
 
-audio{
-    display: none;
+audio {
+  display: none;
 }
 
-h1{
-    color: rgb(138, 70, 31);
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--color5);
+  text-align: center;
+  font-family: "Ballet", cursive;
+  font-weight: 700;
 }
 
-h2, h3, h4, h5, h6{
-    color: rgb(138, 70, 31);
-    text-align: center;
+.ballet-400 {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.dancing {
-  font-family: "Dancing Script", cursive;
-}
-
-.soul {
-  font-family: "My Soul", cursive;
+.cinzel-400 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 #contador {
@@ -171,8 +202,9 @@ h2, h3, h4, h5, h6{
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(138, 70, 31);
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: var(--color5);
 }
 
 .tempo-bloco {
@@ -180,6 +212,10 @@ h2, h3, h4, h5, h6{
   flex-direction: column;
   align-items: center;
   min-width: 72px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(45, 46, 44, 0.08);
 }
 
 .tempo-label {
@@ -192,4 +228,64 @@ h2, h3, h4, h5, h6{
 .tempo-valor {
   font-size: 1.4rem;
   font-weight: 700;
+  color: var(--color4);
+}
+
+.caminhos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0.75rem 0;
+  font-family: "Cinzel", serif;
+}
+
+.caminhos a {
+  flex: 0 1 180px;
+  text-decoration: none;
+}
+
+.btn-confirmar,
+.botao-localizacao {
+  width: 100%;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(45, 46, 44, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-confirmar {
+  background: linear-gradient(135deg, var(--color4), #8fb6a7);
+  color: var(--color5);
+}
+
+.btn-confirmar i {
+  font-size: 1.1rem;
+}
+
+.btn-confirmar:hover,
+.botao-localizacao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(45, 46, 44, 0.14);
+}
+
+.btn-confirmar:active,
+.botao-localizacao:active {
+  transform: translateY(0);
+}
+
+.botao-localizacao {
+  background: linear-gradient(135deg, var(--color3), #b8b8a8);
+  color: var(--color5);
 }
