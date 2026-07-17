@@ -164,3 +164,32 @@ h2, h3, h4, h5, h6{
 .soul {
   font-family: "My Soul", cursive;
 }
+
+#contador {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(138, 70, 31);
+}
+
+.tempo-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+}
+
+.tempo-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.tempo-valor {
+  font-size: 1.4rem;
+  font-weight: 700;
+}

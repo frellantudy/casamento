@@ -66,3 +66,39 @@ document.addEventListener('DOMContentLoaded', () => {
 	updatePlayState();
 });
 
+//contador (pegeui no git)
+
+// Defina a data alvo aqui (12/09/2026 às 16:00)
+const dataAlvo = new Date('2026-09-12T16:00:00').getTime();
+
+const atualizarContador = setInterval(function() {
+    const agora = new Date().getTime();
+    const diferenca = dataAlvo - agora;
+
+    if (diferenca <= 0) {
+        clearInterval(atualizarContador);
+        const contador = document.getElementById('contador');
+        if (contador) {
+            contador.innerHTML = 'Tempo esgotado!';
+        }
+        return;
+    }
+
+    // Cálculos de tempo
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+    // Atualiza o HTML (com operador ternário para adicionar zero à esquerda)
+    const diasEl = document.getElementById('dias');
+    const horasEl = document.getElementById('horas');
+    const minutosEl = document.getElementById('minutos');
+    const segundosEl = document.getElementById('segundos');
+
+    if (diasEl) diasEl.innerText = dias;
+    if (horasEl) horasEl.innerText = horas < 10 ? '0' + horas : horas;
+    if (minutosEl) minutosEl.innerText = minutos < 10 ? '0' + minutos : minutos;
+    if (segundosEl) segundosEl.innerText = segundos < 10 ? '0' + segundos : segundos;
+
+}, 1000);
