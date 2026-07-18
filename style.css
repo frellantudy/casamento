@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --color1: #f7dece;
@@ -20,7 +20,7 @@ body {
   align-items: center;
   background: linear-gradient(135deg, var(--color1), var(--color2));
   color: var(--color5);
-  font-family: "Ballet", cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
 
@@ -177,12 +177,12 @@ h6,
 p {
   color: var(--color5);
   text-align: center;
-  font-family: "Ballet", cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
 
 .ballet-400 {
-  font-family: "Ballet", cursive;
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
